@@ -1,0 +1,31 @@
+[project]
+name = "dreamengine"
+version = "0.1.0"
+description = "A Consciousness-Simulating LLM Agent"
+authors = [{ name = "Pavan Yedida" }]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "black", "mypy", "ipykernel", "jupyter"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]

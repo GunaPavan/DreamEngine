@@ -1,31 +1,67 @@
 # 🧠 DreamEngine
 
-> *Cognitively-inspired AI agent simulating consciousness-like behavior through recursive introspection, hallucinated belief drift, and memory-based dreaming — built with LangChain, local LLMs, and vector memory.*
+**DreamEngine** is an advanced, cognitively-inspired LLM agent designed to simulate elements of consciousness such as memory drift, hallucinated beliefs, recursive introspection, and dreaming — by leveraging multiple open-source large language models and vector-based memory systems.
+
+> ⚗️ A high-level research + engineering project to push the boundaries of LLM cognition.
 
 ---
 
-**DreamEngine** is an experimental agent architecture that models emergent cognition in large language models. It emulates how humans dream, misremember, hallucinate beliefs, and reinforce self-narratives. This is achieved through modular recursive loops powered by vector memory (FAISS/Qdrant), local LLMs (Mistral, LLaMA, etc.), and LangChain pipelines.
+## 🌌 Project Vision
+
+**What if an LLM could simulate a dream?**
+DreamEngine aims to:
+- Model cognitive loops using recursive LLM agents
+- Emulate hallucinations and belief drift
+- Compare behaviors across different open-source LLMs
+- Serve as a testbed for cognitive reasoning and introspective thought
+
+This project serves both as a research platform and a high-quality experimental framework for building cognitively aware AI agents.
 
 ---
 
-## 🧠 Core Concepts
+## 💡 Core Features
 
-| Module                  | Simulated Cognitive Function              |
-|-------------------------|-------------------------------------------|
-| `agent.py`              | Central control loop for recursive thought |
-| `memory.py`             | Long-term memory with vector stores        |
-| `hallucination.py`      | Belief mutation, synthetic recall          |
-| `cognitive_loops.py`    | Dream cycles, introspective reasoning      |
-| `examples/simulate_*.py`| Experimental behavior simulation           |
+| Component | Description |
+|----------|-------------|
+| 🧵 **Recursive DreamAgent** | An agent that thinks in loops, simulates introspection and dreaming |
+| 🧠 **LLM Wrapper Layer** | Supports multiple local open-source LLMs, each modular |
+| 🪄 **Vector Memory System** | Long-term memory with similarity search, powered by ChromaDB |
+| 🌫️ **Hallucination Engine** | Controlled injection of noise or imagined beliefs |
+| 🌀 **Context Drift Logic** | Memory reshaping and recursive summarization to simulate belief evolution |
+| 🔄 **Multi-Model Experiments** | Test all cognitive components on different LLMs from 1B to 13B+ parameters |
 
 ---
 
-## 🚀 Quickstart
+## 🧪 Architecture (Modular)
 
-```bash
-git clone https://github.com/YOUR_USERNAME/DreamEngine.git
-cd DreamEngine
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python examples/simulate_dream_cycle.py
+dreamengine/
+├── src/
+│ └── dreamengine/
+│ ├── agents/ # Recursive agents, dreaming logic
+│ ├── chains/ # Introspection, summarization, hallucination flows
+│ ├── constants/ # Global keys, model configs
+│ ├── core/ # DreamKernel and orchestrators
+│ ├── evaluation/ # Evaluation logic (not tests)
+│ ├── interfaces/ # CLI, Web UI (upcoming)
+│ ├── llm/ # Multiple LLM loader modules
+│ ├── memory/ # Vector DB interfaces
+│ ├── plugins/ # Hallucination, summarizers
+│ ├── utils/ # Logging, helpers
+│ └── init.py
+│
+├── tests/ # Unit tests
+│ ├── test_kernel.py
+│ ├── test_memory.py
+│ ├── test_introspection.py
+│ └── ...
+│
+├── .env # Environment variables
+├── .gitignore
+├── LICENSE
+├── Makefile
+├── pyproject.toml
+├── requirements.txt
+├── README.md
+
+
+
