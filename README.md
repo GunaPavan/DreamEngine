@@ -34,31 +34,33 @@ This project serves both as a research platform and a high-quality experimental 
 
 ## 🧪 Architecture (Modular)
 
+```text
 dreamengine/
 ├── src/
 │   └── dreamengine/
-│       ├── agents/          # Recursive agents, dreaming logic
-│       ├── chains/          # Introspection, summarization, hallucination flows
-│       ├── constants/       # Global keys, model configs
-│       ├── core/            # DreamKernel and orchestrators
-│       ├── evaluation/      # Evaluation logic (not tests)
-│       ├── interfaces/      # CLI, Web UI (upcoming)
-│       ├── llm/             # Multiple LLM loader modules
-│       ├── memory/          # Vector DB interfaces
-│       ├── plugins/         # Hallucination, summarizers
-│       ├── utils/           # Logging, helpers
+│       ├── agents/         # Recursive agents, dreaming logic
+│       ├── chains/         # Introspection, summarization, hallucination flows
+│       ├── constants/      # Global keys, model configs
+│       ├── core/           # DreamKernel and orchestrators
+│       ├── evaluation/     # Evaluation logic (not tests)
+│       ├── interfaces/     # CLI, Web UI (upcoming)
+│       ├── llm/            # Multiple LLM loader modules
+│       ├── memory/         # Vector DB interfaces
+│       ├── plugins/        # Hallucination, summarizers
+│       ├── utils/          # Logging, helpers
 │       └── __init__.py
 ├── tests/
 │   ├── test_kernel.py
 │   ├── test_memory.py
 │   ├── test_introspection.py
 │   └── ...
-├── .env                    # Environment variables
+├── .env                   # Environment variables
 ├── .gitignore
 ├── LICENSE
 ├── Makefile
-├── pyproject.toml          # Modern dependency + build config
-└── README.md               # Project description, architecture, usage, etc.
+├── pyproject.toml         # Modern dependency + build config
+└── README.md              # Project description, architecture, usage, etc.
+
 
 
 
